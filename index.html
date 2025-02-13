@@ -1,0 +1,555 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lars Verhaeghe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"
+    >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+      >
+
+      <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+      >
+      <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+      <link rel="stylesheet" href="css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css">
+    <style>
+    :root {
+  --main-bg-color: white;
+  --main-tx-color: black;
+  --main-gr-color: rgb(150, 150, 150);
+  --main-bl-color: #4633ff;
+    }
+
+        html {
+  scroll-behavior: smooth;
+  transition:0.3s;
+}
+        body{
+            margin:0;
+            padding:0;
+            background-color:var(--main-bg-color);
+            font-family: "Ubuntu", serif;
+        font-weight: 400;
+        font-style: normal;
+        transition:0.3s;
+        }
+        .blue{
+            color:var(--main-bl-color);
+        }
+        .ubuntu-regular {
+  font-family: "Ubuntu", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+    h1{
+        font-size:5vw;
+        color:var(--main-tx-color);
+        transition:0.3s;
+    }
+    h2{
+        font-size:3vw;
+        color:var(--main-gr-color);
+        transition:0.3s;
+    }
+    #hero{
+        line-height: 90%;
+        height:100dvh;
+        animation-name: scrolll;
+        animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+    }
+    @keyframes scrolll{
+    from {opacity:0;}
+    to {opacity:1}
+    }
+    #herotekst{
+        text-align:left;
+        position:absolute;
+        left:50%;
+        top:40%;
+        transform:translate(-50%,-50%);
+        margin-bottom:0;
+    }
+    #navbar{
+        position:fixed;
+        right:88vw;
+        bottom:0;   
+        width:12vw;
+        height:100vh;
+        border-radius: 0px 20px 20px 0px;
+        background-color:var(--main-gr-color);
+    }
+    #profile{
+        width:8vw;
+        position:absolute;
+        left:50%;
+        top:10%;
+        transform: translate(-50%,-50%);
+        height:8vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    #scroller{
+        width:85vw;
+        height:11vw;
+        position:relative;
+        left:12.5vw;
+        overflow:hidden;
+        border-radius:16px;
+        animation: scrolll linear;
+        animation-timeline: view();
+        animation-range-end:300px;
+        animation-range-start:-100px;
+        margin-top:30vw;
+    }
+
+    #html{
+    animation-delay: 0s;
+    }
+    #css{animation-delay: 1s;}
+    #github{animation-delay: 2s;}
+    #node{animation-delay: 3s;}
+    #javascript{animation-delay: 4s;}
+
+    .taal{
+        width:18vw;
+        height:10vw;
+        background-color:var(--main-bg-color);
+        border:5px solid var(--main-gr-color);
+        position:absolute;
+        border-radius:16px;
+        left:100%;
+        animation-name: taalscroll;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display:flex;
+    justify-content: center;
+    align-items:center;
+    }
+    section{
+        margin:0;
+        padding:0;
+    }
+
+    @keyframes taalscroll {
+        from{
+            opacity:1;
+            left:100%;
+        }
+        to{
+            opacity:1;
+            left:calc(0% - 18vw);
+        }
+    }
+    i{
+        transform:scale(5.5);
+        color:var(--main-bl-color);
+    }
+    #projects{
+        display:flex;
+        gap:2vw;
+        flex-wrap:wrap;
+        width:82vw;
+        margin-left:12.5vw;
+        padding:1vw;
+        margin-top:10vw;
+        margin-bottom:10vw;
+        justify-content:center;
+        align-items:center;
+    }
+    .project{
+        width:26vw;
+        height:20vw;
+        border-radius:15px;
+        background: linear-gradient(135deg,blue,purple);
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgSVMLJAybwkPi2a8EjrNSjQySErCvnOH1Kg&s");
+        background-size:cover;
+        animation: scrolll linear;
+        animation-timeline: view();
+        animation-range-end:500px;
+        animation-range-start:-100px;
+    }
+    ul{
+        margin-top:30vh;
+        margin-left:1vw;
+        line-height: 500%;
+        color:var(--main-bg-color);
+        text-decoration: none;
+    }
+    li:hover{
+        font-size:1.4vw;
+        transition:0.2s;
+    }
+    li{
+        font-size:1.2vw;
+        transition:0.2s;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    #dark{
+        background-color:rgba(0, 0, 0, 0);
+        width:4vw;
+        height:4vw;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #light{
+        background-color:rgba(0, 0, 0, 0);
+        width:4vw;
+        height:4vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #dark i{
+        color:white;
+        font-size:2.5vw;
+        transform:scale(1);
+    }
+    #light i{
+        color:black;
+        font-size:3vw;
+        transform:scale(1);
+        margin-top:0.5vw;
+    }
+    #darklight{
+        position:absolute;
+        top:6vh;
+        left:90vw;
+        overflow:hidden;
+        display:flex;
+        width:4vw;
+        height:4vw;
+    }
+    #dlcontainer{
+        /*position:absolute;*/
+        margin-top:-100%;
+        transition:0.3s;
+    }
+    #pijltje{
+        position:relative;
+        top:20%;
+        left:90%;
+        width:5vw;
+        height:7.5vw;
+    }
+    #aboutme{
+        width:60vw;
+        position:absolute;
+        left:25vw;
+        text-align:center;
+        height:50vh;
+        margin-bottom:20vh;
+    }
+    #aboutme p{
+        font-size:1.5vw;
+        color:var(--main-tx-color);
+        animation: scrolll linear;
+        animation-timeline: view();
+        animation-range-end:400px;
+        animation-range-start:-50px;
+    }
+
+    ::-webkit-scrollbar {width: 8px; height: 8px; transition:0.3s;}
+            ::-webkit-scrollbar-thumb {
+            background-color: var(--main-tx-color);
+            transition:0.3s;
+            border-radius:5px 0px 0px 5px;
+            }
+            ::-webkit-scrollbar-track {
+            background-color: var(--main-bg-color);
+            transition:0.3s;
+            }
+            #profile2{
+    display:none;
+    }
+
+
+    @media only screen and (max-width: 768px) {
+
+    #navbar{
+        /*display:none;*/
+        background-color:rgba(0, 0, 0, 0);
+        opacity:1;
+        width:0vw;
+        height:0vw;
+    }
+    #navbar ul{
+        display:none;
+        
+    }
+    #blauwelijn{
+        width:75vw;
+    }
+    #hero h1{
+        font-size:7vw;
+    }
+    #hero h2{
+        font-size:5vw;
+    }
+    #dark{
+        background-color:rgba(0, 0, 0, 0);
+        width:6vw;
+        height:6vw;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #light{
+        background-color:rgba(0, 0, 0, 0);
+        width:6vw;
+        height:6vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #dark i{
+        color:white;
+        font-size:4vw;
+        transform:scale(1);
+    }
+    #light i{
+        color:black;
+        font-size:4vw;
+        transform:scale(1);
+        margin-top:0.5vw;
+    }
+    #darklight{
+        position:absolute;
+        top:6vh;
+        left:90vw;
+        overflow:hidden;
+        display:flex;
+        width:6vw;
+        height:6vw;
+    }
+    #aboutme{
+        width:80vw;
+        position:absolute;
+        left:10vw;
+        text-align:center;
+        height:70vh;
+        margin-bottom:40vh;
+    }
+    #aboutme p{
+        font-size:4.5vw;
+        color:var(--main-tx-color);
+        animation: scrolll linear;
+        animation-timeline: view();
+        animation-range-end:400px;
+        animation-range-start:-50px;
+    }
+    #aboutme h1{
+        font-size:7vw;
+    }
+    #hero{
+        line-height: 90%;
+        height:85dvh;
+        animation-name: scrolll;
+        animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+    }
+
+    #scroller{
+        width:90vw;
+        height:14vw;
+        position:relative;
+        left:5vw;
+        overflow:hidden;
+        border-radius:16px;
+        animation: scrolll linear;
+        animation-timeline: view();
+        animation-range-end:300px;
+        animation-range-start:-100px;
+        margin-top:40vh;
+    }
+    .taal{
+        width:18vw;
+        height:12vw;
+        background-color:var(--main-bg-color);
+        border:5px solid var(--main-gr-color);
+        position:absolute;
+        border-radius:16px;
+        left:100%;
+        animation-name: taalscroll;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display:flex;
+    justify-content: center;
+    align-items:center;
+    }
+    .taal i{
+        transform:scale(2.5);
+    }
+    #projects{
+        gap:4vw;
+        width:90vw;
+        margin-left:4.5vw;
+        padding:1vw;
+        margin-top:20vh;
+        margin-bottom:10vw;
+    }
+    .project{
+        width:80vw;
+        height:50vw;
+        border-radius:15px;
+        background: linear-gradient(135deg,blue,purple);
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgSVMLJAybwkPi2a8EjrNSjQySErCvnOH1Kg&s");
+        background-size:cover;
+        animation: scrolll linear;
+        animation-timeline: view();
+        animation-range-end:500px;
+        animation-range-start:-100px;
+    }
+    #pijltje{
+        display:none;
+    }
+    #profile2{
+    display:block;
+    position:absolute;
+    top:5vh;
+    left:10vw;
+    width:15vw;
+        transform: translate(-50%,-50%);
+        height:15vw;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    #profile{
+    display:none;
+    }
+    }
+    </style>
+</head>
+<body>
+
+    <div id="darklight">
+        <div id="dlcontainer">
+            <div id="dark" onclick="modus('light')"><i class="fa-solid fa-sun"></i></div>
+            <div id="light" onclick="modus('dark')"><i class="fa-solid fa-moon"></i></div>
+        </div>
+    </div>
+    <a href="http://127.0.0.1:5500/index.html"><img id="profile2" src="/_MG_2153.jpg"></a>
+    <div id="navbar">
+        <a href="http://127.0.0.1:5500/index.html"><img id="profile" src="/_MG_2153.jpg"></a>
+        <ul>
+            <a href="#aboutme"><li>about me</li></a>
+            <a href="#scroller"><li>languages</li></a>
+            <a href="#projects"><li>projects</li></a>
+        </ul>
+    </div>
+
+
+    <section id="hero">
+    <div id="herotekst">
+    <h1>Hi,</h1>
+    <h1>I'm <span class="blue">Lars</span></h1>
+    <h2>And I do cool things on the web</h2>  
+<svg id="blauwelijn" width="616" height="13" viewBox="0 0 616 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M615.703 4.72036C615.518 4.48139 615.288 4.2823 615.027 4.13456C614.941 4.08361 614.852 4.04005 614.759 4.00437C614.638 3.95897 614.514 3.91987 614.389 3.88721C614.083 3.8091 613.854 3.77002 613.637 3.73096C611.992 3.52267 610.564 3.47061 609.072 3.37948L604.659 3.21024L595.86 2.98895L578.3 2.75459L543.194 2.5333L472.967 2.40311H402.753H288.328C250.186 2.40311 212.044 2.40311 173.915 2.52027H160.181C160.795 2.22328 161.455 2.03825 162.132 1.97353C175.866 0.268133 165.027 -0.239583 124.003 0.0988921C115.076 0.177002 105.614 0.0988921 96.4963 0.0988921C75.3659 0.0338008 39.8255 0.0988921 18.491 0.0988921C15.2647 0.0988921 12.0001 0.176981 8.69729 0.281127C7.0395 0.281127 5.38171 0.385291 3.5964 0.502455H2.9333L2.16816 0.606584C1.98769 0.629962 1.80882 0.664766 1.63257 0.710752H1.5178L1.30102 0.788859C1.15624 0.863046 1.01573 0.945633 0.880192 1.03621C0.705293 1.16329 0.550474 1.31696 0.421112 1.49186C0.153459 1.84676 0.00579335 2.2807 0.000286495 2.72857C-0.00799287 3.25316 0.163403 3.76427 0.484877 4.17362C0.612706 4.31712 0.753598 4.44788 0.905683 4.56415L1.14798 4.72036L1.31376 4.79847L1.65808 4.91563C1.96505 4.98663 2.2759 5.03883 2.58898 5.07188C3.5199 5.17603 4.34879 5.21506 5.13943 5.25411C11.8598 5.55353 18.542 5.61861 25.1732 5.6837L40.7691 5.82692L36.6374 5.91806L33.3091 6.04825H29.3176V6.51689H28.9988L28.6163 6.64708C28.4417 6.71742 28.2783 6.81395 28.1317 6.93348C27.8359 7.16396 27.6104 7.47547 27.4813 7.83175C27.3787 8.13226 27.3448 8.45277 27.3824 8.76871C27.42 9.08464 27.528 9.3876 27.6981 9.65429L28.425 10.4874H29.968V10.7088C29.968 10.852 29.968 10.7088 29.968 10.7869H30.0318H30.4271L31.358 10.7088L33.2581 10.6046H33.6661C129.499 11.5289 225.319 10.865 321.241 10.4484H343.443C341.25 10.7088 340 10.9952 339.834 11.3206C339.069 12.7917 377.083 12.7917 399.438 12.8568L453.099 13H479.879C484.351 13 488.831 13 493.32 13C495.564 13 497.808 13 500.078 12.8828C501.213 12.8828 502.335 12.8047 503.534 12.7136L504.503 12.6225L504.848 12.5574H505.128C505.358 12.2319 505.256 13.1041 506.633 11.1904C506.622 10.5351 506.532 9.88368 506.365 9.25073L544.711 9.18562L579.767 9.04243L597.314 8.87319L606.113 8.69096L610.538 8.52171C611.278 8.52171 612.017 8.44361 612.795 8.3655C613.263 8.3364 613.727 8.27108 614.185 8.17019H614.376L614.657 8.05303C614.962 7.92379 615.229 7.71776 615.435 7.45421C616.328 7.44119 615.958 4.08247 615.703 4.72036Z" fill="#4633FF"/>
+    </svg>
+    </div>
+    </section>
+
+    <section id="aboutme">
+        <h1>About Me</h1>
+        <p>Hi, I'm lars and I'm a 15-year-old web developer. I've been at it for a few years now, trying to learn and understand more and more. I like to build handy, fun and cool websites. In my spare time, I am often busy with programming, school or music.</p>
+    </section>
+
+    <section id="languages">
+        <div id="scroller">
+            <div class="taal" id="html"><i class="fa-brands fa-html5"></i></div>
+            <div class="taal" id="css"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="taal" id="github"><i class="fa-brands fa-github"></i></div>
+            <div class="taal" id="node"><i class="fa-brands fa-node"></i></div>
+            <div class="taal" id="javascript"><i class="fa-brands fa-js"></i></div>
+        </div>
+    </section>
+
+    <svg id="pijltje" width="37" height="115" viewBox="0 0 37 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M31.0287 75.9286C30.4084 77.5332 27.7789 82.9675 25.9315 86.3387C21.7513 94.2002 16.4923 101.428 10.141 107.456C9.12964 108.386 7.60587 110.126 5.35393 108.049C3.02109 105.892 2.60306 103.559 4.1538 101.941C7.87557 97.976 11.7861 93.9981 14.2808 89.1706C17.9216 82.1451 21.8187 75.3893 24.2055 67.9862C25.2573 64.6825 26.1203 61.3381 26.808 57.9534C27.4553 54.5553 27.7924 51.1709 27.8194 47.7592C27.725 41.3271 26.2417 35.0566 24.3538 29.1099C22.7626 23.9722 21.1175 18.6996 18.07 14.1553C17.7059 13.6294 17.18 13.1441 16.6541 12.6451C16.1012 12.1732 15.5079 11.7281 15.0764 11.1887C14.3886 10.2583 12.9997 8.97737 12.366 7.9795C12.1097 7.53451 11.7861 7.1299 11.3411 6.90066C9.31843 5.92977 9.50721 4.64857 12.2041 2.35618C12.811 1.85724 13.2425 0.927026 14.0515 0.900057C14.0785 0.900057 14.1594 0.886559 14.1864 0.886559C15.5753 0.643835 16.5192 1.06164 17.3013 1.66845C18.0295 2.32919 18.5959 3.19238 19.324 3.86662C26.417 10.6494 31.1501 19.5223 33.7931 28.7727C35.3978 34.4902 36.0315 40.3695 36.463 46.2758C36.6248 47.894 36.962 49.5389 36.6114 51.1841V51.1574C36.6248 52.8834 36.5844 54.6363 36.3686 56.3488C35.3978 62.7675 33.7931 69.4021 31.2715 75.0252C31.1636 75.2409 31.1636 75.5914 31.0287 75.9286Z" fill="blue"/>
+        <path d="M13.9298 101.671C14.631 101.348 17.1527 100.309 18.7034 99.527C22.3173 97.7065 25.9581 95.967 30.017 95.1175C30.6508 94.9826 31.6217 94.5378 32.9162 97.3021C34.2647 100.174 34.413 102.156 33.3612 102.521C30.8396 103.397 28.1157 103.896 25.9581 105.528C22.8162 107.914 19.1349 109.195 15.7233 111.002L14.5366 111.609L12.433 112.634C11.0306 113.349 9.57429 113.956 8.30673 114.171C7.03918 114.401 5.866 114.387 4.73329 114.077C3.61406 113.807 2.42741 113.012 1.65879 112.054L1.57788 111.946C0.903648 111.029 0.526076 110.153 0.269867 109.034C0.000173926 107.928 0.0271359 106.445 0.283344 104.907L0.620461 102.588L0.795768 101.402L0.876673 100.714C0.971065 99.9047 1.10592 99.0956 1.26774 98.3C1.84758 95.5491 3.18255 92.9466 4.0186 90.2497C4.22087 89.6159 3.81634 88.7257 4.00512 88.0245C4.16694 87.4447 4.38269 86.4737 4.76026 85.9343C4.92208 85.7051 5.12435 85.4761 5.05693 85.2064C4.77375 83.9658 5.91994 83.8847 9.26413 84.9635C9.9923 85.1927 11.0037 85.3006 11.4621 85.6782C11.4891 85.6917 11.5161 85.7187 11.543 85.7457C13.4444 86.9998 12.3117 87.6471 12.1903 88.5236C11.57 92.7848 10.7474 97.0054 10.0058 101.24L9.6552 103.074C9.62823 103.208 9.60125 103.33 9.60125 103.451C9.58776 103.694 9.58776 103.936 9.83049 103.923C9.88442 103.923 10.0058 103.855 10.1137 103.774C10.289 103.667 10.4103 103.532 10.2755 103.761C10.4508 103.64 10.6126 103.343 10.6126 103.357C10.6396 103.37 10.68 103.276 10.6665 103.249V103.235L11.6374 102.777C12.2847 102.48 12.9454 102.21 13.6062 101.968C13.7141 101.927 13.7815 101.739 13.9298 101.671Z" fill="blue"/>
+    </svg>        
+    <section id="projects">
+        <div class="project" data-tilt></div>
+        <div class="project" data-tilt></div>
+        <div class="project" data-tilt></div>
+        <div class="project" data-tilt></div>
+        <div class="project" data-tilt></div>
+        <div class="project" data-tilt></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>    
+    <script>
+        new kursor({
+            type: 1,
+            removeDefaultCursor: true,
+            color: '#6f7486'
+        })
+
+
+        function modus(welke) {
+
+            if(welke === 'light'){
+                document.documentElement.style.setProperty('--main-bg-color', 'white');
+                document.documentElement.style.setProperty('--main-tx-color', 'black');
+                document.documentElement.style.setProperty('--main-gr-color', 'rgb(150, 150, 150)');
+                document.getElementById("dlcontainer").style.marginTop = "-100%";
+            } else {
+                document.documentElement.style.setProperty('--main-bg-color', 'rgb(35, 35, 35)');
+                document.documentElement.style.setProperty('--main-tx-color', 'white');
+                document.documentElement.style.setProperty('--main-gr-color', 'rgb(55, 55, 55)');
+                document.getElementById("dlcontainer").style.marginTop = "0%";
+            }
+        }
+
+        $(document).ready(function () {
+    $('.project').tilt({
+        glare: true, // Schakelt glare-effect in
+        maxGlare: 0.5 // Maximale intensiteit van de glare
+    });
+});
+    </script>
+    <script src="tilt.jquery.js"></script>
+</body>
+</html>

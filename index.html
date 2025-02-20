@@ -438,6 +438,7 @@
         animation-timeline: view();
         animation-range-end:500px;
         animation-range-start:-100px;
+        overflow:hidden;
     }
     #pijltje{
         display:none;
@@ -457,15 +458,16 @@
     display:none;
     }
     }
-            #pr1{background:url("incredibox.png");background-size:cover;background-position: center; background-color: rgba(0, 0, 0, 0);}
+        #pr1{background:url("incredibox.png");background-size:cover;background-position: center; background-color: rgba(0, 0, 0, 0);}
+        #pr2{background:url("rankout.png");background-size:cover;background-position: center; background-color: rgba(0, 0, 0, 0);}
     .prtitel{
         font-size: 2vw;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0.5vw 1vw;
-  border-radius: 8px;
+  border-radius: 15px;
         position:relative;
-        top:calc(100% - 3vw);
+        top:calc(100% - 3.2vw);
         left:0%;
         transform:translate(-0%,-50%);
     }
@@ -531,7 +533,7 @@
     </svg>        
     <section id="projects">
         <div class="project" id="pr1" data-tilt><h2 class="prtitel">Incredibox Clone</h2></div>
-        <div class="project" data-tilt></div>
+        <div class="project" id="pr2" data-tilt><h2 class="prtitel">RankOut</h2></div>
         <div class="project" data-tilt></div>
         <div class="project" data-tilt></div>
         <div class="project" data-tilt></div>

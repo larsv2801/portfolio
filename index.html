@@ -43,6 +43,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
     :root {
   --main-bg-color: white;
@@ -196,6 +197,7 @@
         border-radius:15px;
         background: linear-gradient(135deg,blue,purple);
         background-size:cover;
+        overflow:hidden;
         animation: scrolll linear;
         animation-timeline: view();
         animation-range-end:500px;
@@ -434,11 +436,11 @@
         border-radius:15px;
         background: linear-gradient(135deg,blue,purple);
         background-size:cover;
+        overflow:hidden;
         animation: scrolll linear;
         animation-timeline: view();
         animation-range-end:500px;
         animation-range-start:-100px;
-        overflow:hidden;
     }
     #pijltje{
         display:none;
@@ -460,10 +462,12 @@
     }
         #pr1{background:url("incredibox.png");background-size:cover;background-position: center; background-color: rgba(0, 0, 0, 0);}
         #pr2{background:url("rankout.png");background-size:cover;background-position: center; background-color: rgba(0, 0, 0, 0);}
-    .prtitel{
+        #pr3{background:url("schooltimer.png");background-size:cover;background-position: center; background-color: rgba(0, 0, 0, 0);}
+    
+        .prtitel{
         font-size: 2vw;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to top, black, rgba(0,0,0,0) 90%);
   padding: 0.5vw 1vw;
   border-radius: 15px;
         position:relative;
@@ -534,7 +538,7 @@
     <section id="projects">
         <div class="project" id="pr1" data-tilt><h2 class="prtitel">Incredibox Clone</h2></div>
         <div class="project" id="pr2" data-tilt><h2 class="prtitel">RankOut</h2></div>
-        <div class="project" data-tilt></div>
+        <div class="project" id="pr3" data-tilt><h2 class="prtitel">School-Timer</h2></div>
         <div class="project" data-tilt></div>
         <div class="project" data-tilt></div>
         <div class="project" data-tilt></div>
